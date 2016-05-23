@@ -6,10 +6,10 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve('build/'),
-        publicPath: '/public/'
+        publicPath: '/'
     },
     devServer: {
-        contentBase: 'public',
+        contentBase: '',
         port: 7111
     },
     plugins: [
