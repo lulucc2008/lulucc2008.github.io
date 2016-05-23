@@ -5,11 +5,10 @@
     <title>Hello wold!!</title>
 </head>
 <body ng-controller="appCtrl as ac">
-{{ac.hello}}
+<div style="width: 500px" ng-bind="ac.hello" uib-tooltip="{{ac.hello}}" tooltip-placement="right"></div>
 
 
 
-
-<script type="text/javascript" src="build/bundle.js"></script>
+<script type="text/javascript" src="/public/assets/bundle.js"></script>
 </body>
 </html>
