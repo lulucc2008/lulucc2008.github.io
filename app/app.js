@@ -1,4 +1,20 @@
 'use strict';
+
+
+var bootstrap = require('bootstrap');
+var angular = require("angular");
+var ngAnimate = require('angular-animate');
+var uiRouter = require('angular-ui-router');
+var uiBootstrap = require('angular-ui-bootstrap');
+//var uiBootstrapTpls = require('angular-ui-bootstrap-tpls');
+
+class AppCtrl {
+    constructor($scope) {
+        var vm = this;
+        vm.hello = 'Hello wold!!';
+    }
+}
+
 angular
     .module('lc', [
         //'i18nService',
@@ -26,8 +42,5 @@ angular
         ;
         $urlRouterProvider.otherwise('/');
     })
-    .controller('appCtrl', function ($scope) {
-        var vm = this;
-        vm.hello = 'Hello wold!!';
-    })
+    .controller('appCtrl', AppCtrl)
 ;
